@@ -1,5 +1,5 @@
 # Project Name.
-- Django-5-Eccomerce
+- Django-5-Ecomerce
 
 # Description.
 - This project is a tool for me to practice on some basic Django functions by creating an e-commerce application.Users would be able to create an account,log in,be able to see available commodities, add to the cart and be able to purchase them.
