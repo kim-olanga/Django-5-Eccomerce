@@ -1,23 +1,43 @@
 {% extends 'store/base.html' %}
+<!-- {% load crispy_forms_tags %}
+{% load bootstrap4 %} -->
 
 {% block content %}
 <div class="row">
     <div class="col-lg-6">
         <div class="box-element" id="form-wrapper">
             <form id="form">
+                
                 <div id="user-info">
-                    <div class="form-field">
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
                         <input required class="form-control" type="text" name="name" placeholder="Name..">
                     </div>
-                    <div class="form-field">
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
                         <input required class="form-control" type="email" name="email" placeholder="Email..">
                     </div>
                 </div>
                 <div id="shipping-info">
-
+                    <hr>
+                    <p>Shipping Information:</p>
+                    <hr>
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
+                        <input class="form-control" type="text" name="address" placeholder="Address..">
+                    </div>
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
+                        <input class="form-control" type="text" name="city" placeholder="City..">
+                    </div>
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
+                        <input class="form-control" type="text" name="state" placeholder="State..">
+                    </div>
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
+                        <input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
+                    </div>
+                    <div class="form-field" style="width:250px;display: inline-block;padding: 5px;">
+                        <input class="form-control" type="text" name="country" placeholder="Zip code..">
+                    </div>
                 </div>
                 <hr>
-                <input type="submit" value="continue">
+                <input id="form-button" class="btn btn-success btn-block" type="submit" value="continue">
             </form>
         </div>
     </div>
